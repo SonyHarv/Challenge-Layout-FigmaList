@@ -1,0 +1,19 @@
+.project-action {
+  padding-block-start: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+label {
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  user-select: none;
+  border-radius: 0.5rem;
+  font: var(--content);
+  color: var(--white);
+}
+input[id="list"]:checked ~ .project-action [for="list"],
+input[id="grid"]:checked ~ .project-action [for="grid"] {
+  background: var(--blue18);
+}

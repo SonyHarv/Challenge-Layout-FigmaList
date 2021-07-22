@@ -1,0 +1,12 @@
+input[id="list"]:checked ~ .project-list {
+  border: 1px solid red;
+}
+
+input[id="grid"]:checked ~ .project-list {
+  border: 1px solid blue;
+}
+
+input[id="list"]:checked ~ .project-list,
+input[id="grid"]:checked ~ .project-list {
+  margin-block-start: 0.5rem;
+}

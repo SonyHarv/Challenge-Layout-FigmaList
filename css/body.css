@@ -1,0 +1,9 @@
+body {
+  background: var(--backgroundBody);
+}
+
+h1 {
+  font: var(--title);
+  color: var(--white);
+  text-align: center;
+}

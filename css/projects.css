@@ -1,0 +1,12 @@
+@import "./project-list.css";
+@import "./project-action.css";
+
+.projects {
+  margin: auto;
+  background: var(--backgroundWrapper);
+  max-inline-size: 64rem;
+}
+
+input {
+  display: none;
+}

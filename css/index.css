@@ -1,3 +1,14 @@
-h1 {
-  color: purple;
+@import "./body.css";
+@import "./projects.css";
+:root {
+  font-size: 16px;
+  /* background: #050505; */
+  --backgroundBody: #161616;
+  --backgroundWrapper: #333333;
+  --white: #ffffff;
+  --white20: #e6d7d7;
+  --blue18: #18a0fb;
+  --baseFontFamily: Montserrat, system-ui, sans-serif;
+  --title: bold 2rem / normal var(--baseFontFamily);
+  --content: normal 1rem / normal var(--baseFontFamily);
 }
