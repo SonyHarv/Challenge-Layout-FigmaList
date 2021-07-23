@@ -1,7 +1,9 @@
 @import "./project-list.css";
+@import "./project-grid.css";
 @import "./project-action.css";
 
 .projects {
+  border: 1px solid rgb(165, 157, 157);
   margin: auto;
   background: var(--backgroundWrapper);
   max-inline-size: 64rem;

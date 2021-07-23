@@ -1,0 +1,49 @@
+input[id="grid"]:checked ~ .project-list {
+  border-block-start: 1px solid rgb(165, 157, 157);
+}
+input[id="grid"]:checked ~ .project-list {
+  margin-block-start: 0.5rem;
+}
+
+input[id="grid"]:checked ~ .project-list {
+  /* border: 1px solid rgb(165, 157, 157); */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+input[id="grid"]:checked ~ .project-list .project {
+  border: 1px solid rgb(165, 157, 157);
+  display: grid;
+  grid-template-columns: 6.25rem 1fr;
+  grid-template-rows: 1fr auto auto;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font: var(--content);
+  color: #d4cbcb;
+}
+input[id="grid"]:checked ~ .project-list .project img {
+  inline-size: 100%;
+  block-size: 12.5rem;
+  /* aspect-ratio: 1/1; */
+  object-fit: cover;
+  grid-area: 1/ 1/ 1/ -1;
+}
+
+input[id="grid"]:checked ~ .project-list .project time:nth-of-type(1) {
+  /* border: 1px solid red; */
+  grid-column-start: 2;
+}
+input[id="grid"]:checked ~ .project-list .project time:nth-of-type(2) {
+  /* border: 1px solid blue; */
+  grid-column-start: 2;
+}
+input[id="grid"]:checked ~ .project-list .project-name {
+  /* border: 1px solid orange; */
+  color: var(--white);
+  grid-row: 2/4;
+}

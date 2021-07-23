@@ -1,12 +1,33 @@
 input[id="list"]:checked ~ .project-list {
-  border: 1px solid red;
+  border-block-start: 1px solid rgb(165, 157, 157);
+}
+input[id="list"]:checked ~ .project-list .project {
+  /* border: 1px solid rgb(165, 157, 157); */
+  padding: 1rem;
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  display: grid;
+  grid-template-columns: 5rem 1fr 6.25rem 6.25rem;
+  align-items: center;
+  gap: 1rem;
+  font: var(--content);
+  color: var(--white20);
 }
 
-input[id="grid"]:checked ~ .project-list {
-  border: 1px solid blue;
+/* input[id="list"]:checked ~ .project-list .project > * {
+  border: 5px solid black;
+} */
+
+input[id="list"]:checked ~ .project-list .project img {
+  inline-size: 4.375rem;
+  block-size: 4.375rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
-input[id="list"]:checked ~ .project-list,
-input[id="grid"]:checked ~ .project-list {
+input[id="list"]:checked ~ .project-list {
   margin-block-start: 0.5rem;
 }
