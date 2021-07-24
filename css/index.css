@@ -12,3 +12,24 @@
   --title: bold 2rem / normal var(--baseFontFamily);
   --content: normal 1rem / normal var(--baseFontFamily);
 }
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 12px;
+  }
+}
+/* @media screen and (max-width: 380px) {
+  :root {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 310px) {
+  :root {
+    font-size: 8px;
+  }
+} */

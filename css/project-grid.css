@@ -1,6 +1,6 @@
-input[id="grid"]:checked ~ .project-list {
+/* input[id="grid"]:checked ~ .project-list {
   border-block-start: 1px solid rgb(165, 157, 157);
-}
+} */
 input[id="grid"]:checked ~ .project-list {
   margin-block-start: 0.5rem;
 }

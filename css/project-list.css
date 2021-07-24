@@ -1,6 +1,6 @@
-input[id="list"]:checked ~ .project-list {
+/* input[id="list"]:checked ~ .project-list {
   border-block-start: 1px solid rgb(165, 157, 157);
-}
+} */
 input[id="list"]:checked ~ .project-list .project {
   /* border: 1px solid rgb(165, 157, 157); */
   padding: 1rem;
